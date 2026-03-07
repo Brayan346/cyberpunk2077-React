@@ -35,8 +35,8 @@ export const cyberSectionData = {
         mainImg:"https://cdn-l-cyberpunk.cdprojektred.com/cyberpunk2077/phantom-liberty/gallery-screenshot-03@1x.jpg",
         images:[
             "https://cdn-l-cyberpunk.cdprojektred.com/cyberpunk2077/phantom-liberty/gallery-screenshot-03@1x.jpg",
-            "https://cdn-l-cyberpunk.cdprojektred.com/cyberpunk2077/phantom-liberty/gallery-screenshot-03@1x.jpg",
-            "https://i.pinimg.com/736x/77/81/dd/7781dde14911b9440dc865b94aba0af1.jpg"
+            "https://cdn-l-cyberpunk.cdprojektred.com/cyberpunk2077/phantom-liberty/gallery-screenshot-02@1x.jpg",
+            "https://i.ytimg.com/vi/29Rk-sbtzGU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDi58Rn17xAuk5ZiUdv9P3qlSPWWQ"
         ]
     }
 }
