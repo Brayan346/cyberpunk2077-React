@@ -1,0 +1,144 @@
+.cyberpunk-page {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Rajdhani', sans-serif;
+  padding: 2rem;
+  text-align: center;
+
+  /* 🎨 Fondo con puntos amarillos */
+  background-image: radial-gradient(#958a16 1px, transparent 1px);
+  background-size: 89px 89px; /* separación entre puntos */
+}
+
+.cyberpunk-header h1 {
+  font-family: 'Orbitron', sans-serif;
+  color: #ffeb00;
+  font-size: 1.6rem; /* título más pequeño */
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.subtitle-text {
+  font-family: 'Rajdhani', sans-serif;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+  color: #ffeb00; /* amarillo permanente */
+  font-size: 1.2rem; /* subtítulo más pequeño */
+}
+
+.cyberpunk-videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+/* 🎨 Video card con esquina cortada más sutil */
+.video-card {
+  background-color: #000;
+  width: 420px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 95%,   /* corte menos profundo */
+    95% 100%,   /* corte menos ancho */
+    0 100%
+  );
+
+  border: 3px solid #ffeb00;
+}
+
+/* 🎨 Línea diagonal amarilla que cierra la esquina cortada */
+.video-card::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  width: 140px;   /* más larga para cubrir toda la diagonal */
+  height: 4px;    /* grosor */
+  background: #ffeb00;
+
+  transform: rotate(-45deg) translate(18px, 18px); /* alineación precisa */
+  transform-origin: bottom right;
+
+  box-shadow: 0 0 8px #ffeb00; /* glow amarillo */
+}
+
+/* ❌ Eliminar línea decorativa para evitar confusión visual */
+.video-card::after {
+  display: none;
+}
+
+.thumbnail-container {
+  position: relative;
+  width: 100%;
+}
+
+.thumbnail-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: #ffeb00;
+  opacity: 0.9;
+  pointer-events: none;
+  text-shadow: 0 0 10px #000;
+}
+
+.video-footer {
+  background-color: #000;
+  border-top: 3px solid #ffeb00;
+  padding: 0.6rem;
+  transition: background-color 0.3s ease;
+}
+
+.video-title {
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  font-size: 1.1rem; /* título más pequeño */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+/* 🎨 EFECTO HOVER */
+.video-card:hover {
+  background-color: #ffeb00;
+}
+
+.video-card:hover .video-title {
+  color: #000;
+}
+
+.video-card:hover .video-footer {
+  background-color: #ffeb00;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .cyberpunk-videos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-card {
+    width: 95%;
+  }
+}
