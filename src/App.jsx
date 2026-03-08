@@ -2,6 +2,8 @@ import './App.css'
 import Header from './components/Header'
 import CyberSection from './components/CyberSection'
 import CyberpunkAnniversary from './components/Juan' 
+import Multimedia from './components/Multimedia'
+
 
 function App() {
   return (
@@ -9,7 +11,9 @@ function App() {
       <Header />
       <CyberSection />
       <CyberpunkAnniversary />
+      <Multimedia />
     </div>
+    
   )
 }
 
